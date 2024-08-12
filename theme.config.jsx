@@ -3,7 +3,7 @@ import React from 'react'
 const config = {
   logo: <span>Zinnia Design System</span>,
   project: {
-    link: 'https://zinnia-design-system.supernova-docs.io/',
+    link: 'https://github.com/gaurisharma1811/zinnia-design-system-docs',
   },
 }
 

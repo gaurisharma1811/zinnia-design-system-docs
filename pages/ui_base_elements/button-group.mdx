@@ -1,0 +1,119 @@
+import { Tabs, Callout } from 'nextra/components'
+import CodeToggle from '../../components/CodeToggle';
+
+# Button Group 
+
+<Tabs items={['Guidelines', 'Style', 'Content', 'Accessibility']}>
+    <Tabs.Tab>
+        <CodeToggle code={`
+        () => <div className="flex gap-2">
+            <button className='bg-blue-600 text-white px-2 py-1 rounded-md'>Button 1</button>
+            <button className='bg-blue-600 text-white px-2 py-1 rounded-md'>Button 2</button>
+        </div>
+        `} />
+        <img src="https://studio-assets.supernova.io/design-systems/23040/c325b997-faca-4f89-a1db-d43b52f88d08.jpg" alt="btn-group-img"/>
+
+        Button groups should be used when there are interrelated actions among a set of buttons.
+
+        <Callout type="info">
+            Click the Figma link below for layout, anatomy, and token specs.
+        </Callout>
+
+        ### Button Group Item 
+
+        <Callout type="info" title="Figma Component">
+            <div className="flex justify-between">
+                <div>
+                    <strong>Figma component</strong>
+                    <p>Includes a link to a Figma component that has been imported to Supernova</p>
+                </div>
+                <div>
+                    <a href="https://www.figma.com/file/XK6QYydn0IKxAYPkE4MAFm?node-id=6:5574" target="_blank" className="flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <path fill="#F24E1E" d="M4.8 4.8c0-2.04 1.56-3.6 3.6-3.6H12v7.2H8.4c-2.04 0-3.6-1.56-3.6-3.6Z"></path>
+                            <path fill="#A259FF" d="M4.8 12c0-2.04 1.56-3.6 3.6-3.6H12v7.2H8.4c-2.04 0-3.6-1.56-3.6-3.6Z"></path>
+                            <path fill="#0ACF83" d="M8.4 22.8c2.04 0 3.6-1.56 3.6-3.6v-3.6H8.4c-2.04 0-3.6 1.56-3.6 3.6s1.56 3.6 3.6 3.6Z"></path>
+                            <path fill="#1ABCFE" d="M15.6 15.6a3.6 3.6 0 1 0 0-7.2 3.6 3.6 0 0 0 0 7.2Z"></path>
+                            <path fill="#FF7262" d="M12 1.2h3.6c2.04 0 3.6 1.56 3.6 3.6s-1.56 3.6-3.6 3.6H12V1.2Z"></path>
+                        </svg> 
+                        <span>Open in Figma</span>
+                    </a>
+                </div>
+            </div>
+        </Callout>
+
+        ### Button Group 
+
+        <Callout type="info" title="Figma Component">
+            <div className="flex justify-between">
+                <div>
+                    <strong>Figma component</strong>
+                    <p>Includes a link to a Figma component that has been imported to Supernova</p>
+                </div>
+                <div>
+                    <a href="https://www.figma.com/file/XK6QYydn0IKxAYPkE4MAFm?node-id=6:5574" target="_blank" className="flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <path fill="#F24E1E" d="M4.8 4.8c0-2.04 1.56-3.6 3.6-3.6H12v7.2H8.4c-2.04 0-3.6-1.56-3.6-3.6Z"></path>
+                            <path fill="#A259FF" d="M4.8 12c0-2.04 1.56-3.6 3.6-3.6H12v7.2H8.4c-2.04 0-3.6-1.56-3.6-3.6Z"></path>
+                            <path fill="#0ACF83" d="M8.4 22.8c2.04 0 3.6-1.56 3.6-3.6v-3.6H8.4c-2.04 0-3.6 1.56-3.6 3.6s1.56 3.6 3.6 3.6Z"></path>
+                            <path fill="#1ABCFE" d="M15.6 15.6a3.6 3.6 0 1 0 0-7.2 3.6 3.6 0 0 0 0 7.2Z"></path>
+                            <path fill="#FF7262" d="M12 1.2h3.6c2.04 0 3.6 1.56 3.6 3.6s-1.56 3.6-3.6 3.6H12V1.2Z"></path>
+                        </svg> 
+                        <span>Open in Figma</span>
+                    </a>
+                </div>
+            </div>
+        </Callout>
+
+        ## Usage
+
+        | Do | Don't |
+        |:---|:------|
+        | Do keep labels consistent. | Don’t allow segments to wrap onto new line. |
+        | Do use relative, concise, and consistent labeling. | Don't use icons in the button group. |
+
+        ## Behavior
+
+        | Tab focuses on an individual segment |
+        | :----------------------------------- |
+        | Use tab to navigate through the button items |
+        | Space/Enter to select or unselect the focused button item\ |
+        | Accessibility label should describe the action that the button is expressing or the visible label text |
+
+    </Tabs.Tab>
+
+    <Tabs.Tab>
+
+        ## Color Tokens 
+
+        ## Typography Tokens
+
+    </Tabs.Tab>
+
+    <Tabs.Tab>
+    
+        Buttons communicate that users have a choice among related options. Along with usage guidance, follow this content guidance:
+
+        ### Do's 
+
+        - Aim for one word per button. Use sentence case if needed.
+        - Use parentheses to display a related number only (not related words).
+
+        ### Don't's
+
+        - Mismatch tenses or word types. For example if one item in the button group is a plural noun, all should be plural nouns.
+
+    </Tabs.Tab>
+
+    <Tabs.Tab>
+
+        | Keys | Action |
+        | :--- | :----- |
+        | Tab | Focuses on an individual segment |
+        | Tab | Navigates through the button items |
+        | Space/Enter | Select or unselect the focused button item |
+
+        Accessibility label should describe the action that the button is expressing or the visible label text
+
+    </Tabs.Tab>
+</Tabs>
